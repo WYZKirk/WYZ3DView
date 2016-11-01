@@ -9,3 +9,4 @@
  单指用于移动图像位置,双指同向移动用于移动立体图形旋转,双指异向用于放大缩小.
  
  
+![alt tag](https://github.com/WYZKirk/WYZ3DView/blob/master/WYZ3DView/Assets.xcassets/3Ddemo.png)
