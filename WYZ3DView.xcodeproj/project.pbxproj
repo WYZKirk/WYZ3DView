@@ -15,10 +15,10 @@
 		711B29BA1DC82089000D4E8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711B29B81DC82089000D4E8A /* LaunchScreen.storyboard */; };
 		711B29C51DC82089000D4E8A /* WYZ3DViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29C41DC82089000D4E8A /* WYZ3DViewTests.m */; };
 		711B29D01DC82089000D4E8A /* WYZ3DViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29CF1DC82089000D4E8A /* WYZ3DViewUITests.m */; };
-		711B29E61DC820F1000D4E8A /* WYZ3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29DF1DC820F1000D4E8A /* WYZ3DView.m */; };
-		711B29E71DC820F1000D4E8A /* WYZContainer3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29E11DC820F1000D4E8A /* WYZContainer3DView.m */; };
-		711B29E81DC820F1000D4E8A /* WYZInsert3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29E31DC820F1000D4E8A /* WYZInsert3DView.m */; };
-		711B29E91DC820F1000D4E8A /* WYZOuter3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29E51DC820F1000D4E8A /* WYZOuter3DView.m */; };
+		711B29F21DC83616000D4E8A /* WYZ3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29EB1DC83616000D4E8A /* WYZ3DView.m */; };
+		711B29F31DC83616000D4E8A /* WYZContainer3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29ED1DC83616000D4E8A /* WYZContainer3DView.m */; };
+		711B29F41DC83616000D4E8A /* WYZInsert3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29EF1DC83616000D4E8A /* WYZInsert3DView.m */; };
+		711B29F51DC83616000D4E8A /* WYZOuter3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29F11DC83616000D4E8A /* WYZOuter3DView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +55,14 @@
 		711B29CB1DC82089000D4E8A /* WYZ3DViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYZ3DViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		711B29CF1DC82089000D4E8A /* WYZ3DViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYZ3DViewUITests.m; sourceTree = "<group>"; };
 		711B29D11DC82089000D4E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		711B29DE1DC820F1000D4E8A /* WYZ3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZ3DView.h; sourceTree = "<group>"; };
-		711B29DF1DC820F1000D4E8A /* WYZ3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZ3DView.m; sourceTree = "<group>"; };
-		711B29E01DC820F1000D4E8A /* WYZContainer3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZContainer3DView.h; sourceTree = "<group>"; };
-		711B29E11DC820F1000D4E8A /* WYZContainer3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZContainer3DView.m; sourceTree = "<group>"; };
-		711B29E21DC820F1000D4E8A /* WYZInsert3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZInsert3DView.h; sourceTree = "<group>"; };
-		711B29E31DC820F1000D4E8A /* WYZInsert3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZInsert3DView.m; sourceTree = "<group>"; };
-		711B29E41DC820F1000D4E8A /* WYZOuter3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZOuter3DView.h; sourceTree = "<group>"; };
-		711B29E51DC820F1000D4E8A /* WYZOuter3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZOuter3DView.m; sourceTree = "<group>"; };
+		711B29EA1DC83616000D4E8A /* WYZ3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZ3DView.h; sourceTree = "<group>"; };
+		711B29EB1DC83616000D4E8A /* WYZ3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZ3DView.m; sourceTree = "<group>"; };
+		711B29EC1DC83616000D4E8A /* WYZContainer3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZContainer3DView.h; sourceTree = "<group>"; };
+		711B29ED1DC83616000D4E8A /* WYZContainer3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZContainer3DView.m; sourceTree = "<group>"; };
+		711B29EE1DC83616000D4E8A /* WYZInsert3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZInsert3DView.h; sourceTree = "<group>"; };
+		711B29EF1DC83616000D4E8A /* WYZInsert3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZInsert3DView.m; sourceTree = "<group>"; };
+		711B29F01DC83616000D4E8A /* WYZOuter3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZOuter3DView.h; sourceTree = "<group>"; };
+		711B29F11DC83616000D4E8A /* WYZOuter3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZOuter3DView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,14 +156,14 @@
 		711B29DD1DC820C1000D4E8A /* wyz3DView */ = {
 			isa = PBXGroup;
 			children = (
-				711B29DE1DC820F1000D4E8A /* WYZ3DView.h */,
-				711B29DF1DC820F1000D4E8A /* WYZ3DView.m */,
-				711B29E01DC820F1000D4E8A /* WYZContainer3DView.h */,
-				711B29E11DC820F1000D4E8A /* WYZContainer3DView.m */,
-				711B29E21DC820F1000D4E8A /* WYZInsert3DView.h */,
-				711B29E31DC820F1000D4E8A /* WYZInsert3DView.m */,
-				711B29E41DC820F1000D4E8A /* WYZOuter3DView.h */,
-				711B29E51DC820F1000D4E8A /* WYZOuter3DView.m */,
+				711B29EA1DC83616000D4E8A /* WYZ3DView.h */,
+				711B29EB1DC83616000D4E8A /* WYZ3DView.m */,
+				711B29EC1DC83616000D4E8A /* WYZContainer3DView.h */,
+				711B29ED1DC83616000D4E8A /* WYZContainer3DView.m */,
+				711B29EE1DC83616000D4E8A /* WYZInsert3DView.h */,
+				711B29EF1DC83616000D4E8A /* WYZInsert3DView.m */,
+				711B29F01DC83616000D4E8A /* WYZOuter3DView.h */,
+				711B29F11DC83616000D4E8A /* WYZOuter3DView.m */,
 			);
 			path = wyz3DView;
 			sourceTree = "<group>";
@@ -301,12 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				711B29E91DC820F1000D4E8A /* WYZOuter3DView.m in Sources */,
+				711B29F51DC83616000D4E8A /* WYZOuter3DView.m in Sources */,
 				711B29B21DC82089000D4E8A /* ViewController.m in Sources */,
-				711B29E81DC820F1000D4E8A /* WYZInsert3DView.m in Sources */,
+				711B29F41DC83616000D4E8A /* WYZInsert3DView.m in Sources */,
 				711B29AF1DC82089000D4E8A /* AppDelegate.m in Sources */,
-				711B29E71DC820F1000D4E8A /* WYZContainer3DView.m in Sources */,
-				711B29E61DC820F1000D4E8A /* WYZ3DView.m in Sources */,
+				711B29F31DC83616000D4E8A /* WYZContainer3DView.m in Sources */,
+				711B29F21DC83616000D4E8A /* WYZ3DView.m in Sources */,
 				711B29AC1DC82089000D4E8A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +537,7 @@
 				711B29D61DC82089000D4E8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		711B29D71DC82089000D4E8A /* Build configuration list for PBXNativeTarget "WYZ3DViewTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +546,7 @@
 				711B29D91DC82089000D4E8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		711B29DA1DC82089000D4E8A /* Build configuration list for PBXNativeTarget "WYZ3DViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +555,7 @@
 				711B29DC1DC82089000D4E8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

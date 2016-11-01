@@ -43,7 +43,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         blockBorder = 60;
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor clearColor];
         trans = CATransform3DIdentity;
         trans.m34 = -1/500;
         _storey3DCount = 4;

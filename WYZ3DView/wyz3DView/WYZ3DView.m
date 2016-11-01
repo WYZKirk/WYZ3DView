@@ -28,6 +28,7 @@
         self.bounces = NO;
         self.bouncesZoom = NO;
         self.delegate = self;
+        self.backgroundColor = [UIColor whiteColor];
         _storeyCount = 4;
         _partCountx = 4;
         _partCounty = 4;
@@ -43,8 +44,26 @@
     if (containView == nil) {
         CGFloat conWidth = sqrt(_partCountx*_partCountx+_storeyCount*_storeyCount+_partCounty*_partCounty)*60;
         CGFloat conHeigth = conWidth;
+        CGFloat minScale = self.frame.size.width/conWidth;
+        if (conWidth < self.frame.size.width&&conHeigth < self.frame.size.height) {
+            conWidth = self.frame.size.width;
+            conHeigth = self.frame.size.height;
+            minScale = 1;
+        }else if(conHeigth < self.frame.size.height){
+            conHeigth = self.frame.size.height;
+            minScale = 1;
+        }else if(conWidth < self.frame.size.width){
+            conWidth = self.frame.size.width;
+            minScale = 1;
+        }else{
+            if (conWidth/self.frame.size.width < conHeigth/self.frame.size.height){
+                minScale = self.frame.size.width/conWidth;
+            }else{
+                minScale = self.frame.size.height/conHeigth;
+            }
+        }
         self.maximumZoomScale = 1;
-        self.minimumZoomScale = self.frame.size.width/conWidth;
+        self.minimumZoomScale = minScale;
         self.contentSize = CGSizeMake(conWidth, conHeigth);
         self.contentOffset = CGPointMake((conWidth-self.frame.size.width)/2, (conHeigth-self.frame.size.height)/2);
         containView = [[WYZContainer3DView alloc]initWithFrame:CGRectMake(0, 0, conWidth, conHeigth)];
@@ -56,7 +75,6 @@
         containView.maxColorNumber = _maxColorNumber;
         containView.minColorNumber = _minColorNumber;
         containView.sameBackgroudColor = _sameBackgroudColor;
-        containView.backgroundColor = [UIColor whiteColor];
         [self addSubview:containView];
         self.zoomScale = self.minimumZoomScale;
     }
