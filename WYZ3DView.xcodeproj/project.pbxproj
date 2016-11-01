@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		711B29AC1DC82089000D4E8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29AB1DC82089000D4E8A /* main.m */; };
+		711B29AF1DC82089000D4E8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29AE1DC82089000D4E8A /* AppDelegate.m */; };
+		711B29B21DC82089000D4E8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29B11DC82089000D4E8A /* ViewController.m */; };
+		711B29B51DC82089000D4E8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711B29B31DC82089000D4E8A /* Main.storyboard */; };
+		711B29B71DC82089000D4E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711B29B61DC82089000D4E8A /* Assets.xcassets */; };
+		711B29BA1DC82089000D4E8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711B29B81DC82089000D4E8A /* LaunchScreen.storyboard */; };
+		711B29C51DC82089000D4E8A /* WYZ3DViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29C41DC82089000D4E8A /* WYZ3DViewTests.m */; };
+		711B29D01DC82089000D4E8A /* WYZ3DViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29CF1DC82089000D4E8A /* WYZ3DViewUITests.m */; };
+		711B29E61DC820F1000D4E8A /* WYZ3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29DF1DC820F1000D4E8A /* WYZ3DView.m */; };
+		711B29E71DC820F1000D4E8A /* WYZContainer3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29E11DC820F1000D4E8A /* WYZContainer3DView.m */; };
+		711B29E81DC820F1000D4E8A /* WYZInsert3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29E31DC820F1000D4E8A /* WYZInsert3DView.m */; };
+		711B29E91DC820F1000D4E8A /* WYZOuter3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 711B29E51DC820F1000D4E8A /* WYZOuter3DView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		711B29C11DC82089000D4E8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 711B299F1DC82089000D4E8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 711B29A61DC82089000D4E8A;
+			remoteInfo = WYZ3DView;
+		};
+		711B29CC1DC82089000D4E8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 711B299F1DC82089000D4E8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 711B29A61DC82089000D4E8A;
+			remoteInfo = WYZ3DView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		711B29A71DC82089000D4E8A /* WYZ3DView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYZ3DView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		711B29AB1DC82089000D4E8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		711B29AD1DC82089000D4E8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		711B29AE1DC82089000D4E8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		711B29B01DC82089000D4E8A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		711B29B11DC82089000D4E8A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		711B29B41DC82089000D4E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		711B29B61DC82089000D4E8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		711B29B91DC82089000D4E8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		711B29BB1DC82089000D4E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		711B29C01DC82089000D4E8A /* WYZ3DViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYZ3DViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		711B29C41DC82089000D4E8A /* WYZ3DViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYZ3DViewTests.m; sourceTree = "<group>"; };
+		711B29C61DC82089000D4E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		711B29CB1DC82089000D4E8A /* WYZ3DViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYZ3DViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		711B29CF1DC82089000D4E8A /* WYZ3DViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYZ3DViewUITests.m; sourceTree = "<group>"; };
+		711B29D11DC82089000D4E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		711B29DE1DC820F1000D4E8A /* WYZ3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZ3DView.h; sourceTree = "<group>"; };
+		711B29DF1DC820F1000D4E8A /* WYZ3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZ3DView.m; sourceTree = "<group>"; };
+		711B29E01DC820F1000D4E8A /* WYZContainer3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZContainer3DView.h; sourceTree = "<group>"; };
+		711B29E11DC820F1000D4E8A /* WYZContainer3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZContainer3DView.m; sourceTree = "<group>"; };
+		711B29E21DC820F1000D4E8A /* WYZInsert3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZInsert3DView.h; sourceTree = "<group>"; };
+		711B29E31DC820F1000D4E8A /* WYZInsert3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZInsert3DView.m; sourceTree = "<group>"; };
+		711B29E41DC820F1000D4E8A /* WYZOuter3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZOuter3DView.h; sourceTree = "<group>"; };
+		711B29E51DC820F1000D4E8A /* WYZOuter3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZOuter3DView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		711B29A41DC82089000D4E8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711B29BD1DC82089000D4E8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711B29C81DC82089000D4E8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		711B299E1DC82089000D4E8A = {
+			isa = PBXGroup;
+			children = (
+				711B29A91DC82089000D4E8A /* WYZ3DView */,
+				711B29C31DC82089000D4E8A /* WYZ3DViewTests */,
+				711B29CE1DC82089000D4E8A /* WYZ3DViewUITests */,
+				711B29A81DC82089000D4E8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		711B29A81DC82089000D4E8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				711B29A71DC82089000D4E8A /* WYZ3DView.app */,
+				711B29C01DC82089000D4E8A /* WYZ3DViewTests.xctest */,
+				711B29CB1DC82089000D4E8A /* WYZ3DViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		711B29A91DC82089000D4E8A /* WYZ3DView */ = {
+			isa = PBXGroup;
+			children = (
+				711B29DD1DC820C1000D4E8A /* wyz3DView */,
+				711B29AD1DC82089000D4E8A /* AppDelegate.h */,
+				711B29AE1DC82089000D4E8A /* AppDelegate.m */,
+				711B29B01DC82089000D4E8A /* ViewController.h */,
+				711B29B11DC82089000D4E8A /* ViewController.m */,
+				711B29B31DC82089000D4E8A /* Main.storyboard */,
+				711B29B61DC82089000D4E8A /* Assets.xcassets */,
+				711B29B81DC82089000D4E8A /* LaunchScreen.storyboard */,
+				711B29BB1DC82089000D4E8A /* Info.plist */,
+				711B29AA1DC82089000D4E8A /* Supporting Files */,
+			);
+			path = WYZ3DView;
+			sourceTree = "<group>";
+		};
+		711B29AA1DC82089000D4E8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				711B29AB1DC82089000D4E8A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		711B29C31DC82089000D4E8A /* WYZ3DViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				711B29C41DC82089000D4E8A /* WYZ3DViewTests.m */,
+				711B29C61DC82089000D4E8A /* Info.plist */,
+			);
+			path = WYZ3DViewTests;
+			sourceTree = "<group>";
+		};
+		711B29CE1DC82089000D4E8A /* WYZ3DViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				711B29CF1DC82089000D4E8A /* WYZ3DViewUITests.m */,
+				711B29D11DC82089000D4E8A /* Info.plist */,
+			);
+			path = WYZ3DViewUITests;
+			sourceTree = "<group>";
+		};
+		711B29DD1DC820C1000D4E8A /* wyz3DView */ = {
+			isa = PBXGroup;
+			children = (
+				711B29DE1DC820F1000D4E8A /* WYZ3DView.h */,
+				711B29DF1DC820F1000D4E8A /* WYZ3DView.m */,
+				711B29E01DC820F1000D4E8A /* WYZContainer3DView.h */,
+				711B29E11DC820F1000D4E8A /* WYZContainer3DView.m */,
+				711B29E21DC820F1000D4E8A /* WYZInsert3DView.h */,
+				711B29E31DC820F1000D4E8A /* WYZInsert3DView.m */,
+				711B29E41DC820F1000D4E8A /* WYZOuter3DView.h */,
+				711B29E51DC820F1000D4E8A /* WYZOuter3DView.m */,
+			);
+			path = wyz3DView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		711B29A61DC82089000D4E8A /* WYZ3DView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 711B29D41DC82089000D4E8A /* Build configuration list for PBXNativeTarget "WYZ3DView" */;
+			buildPhases = (
+				711B29A31DC82089000D4E8A /* Sources */,
+				711B29A41DC82089000D4E8A /* Frameworks */,
+				711B29A51DC82089000D4E8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WYZ3DView;
+			productName = WYZ3DView;
+			productReference = 711B29A71DC82089000D4E8A /* WYZ3DView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		711B29BF1DC82089000D4E8A /* WYZ3DViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 711B29D71DC82089000D4E8A /* Build configuration list for PBXNativeTarget "WYZ3DViewTests" */;
+			buildPhases = (
+				711B29BC1DC82089000D4E8A /* Sources */,
+				711B29BD1DC82089000D4E8A /* Frameworks */,
+				711B29BE1DC82089000D4E8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				711B29C21DC82089000D4E8A /* PBXTargetDependency */,
+			);
+			name = WYZ3DViewTests;
+			productName = WYZ3DViewTests;
+			productReference = 711B29C01DC82089000D4E8A /* WYZ3DViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		711B29CA1DC82089000D4E8A /* WYZ3DViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 711B29DA1DC82089000D4E8A /* Build configuration list for PBXNativeTarget "WYZ3DViewUITests" */;
+			buildPhases = (
+				711B29C71DC82089000D4E8A /* Sources */,
+				711B29C81DC82089000D4E8A /* Frameworks */,
+				711B29C91DC82089000D4E8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				711B29CD1DC82089000D4E8A /* PBXTargetDependency */,
+			);
+			name = WYZ3DViewUITests;
+			productName = WYZ3DViewUITests;
+			productReference = 711B29CB1DC82089000D4E8A /* WYZ3DViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		711B299F1DC82089000D4E8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = wyz;
+				TargetAttributes = {
+					711B29A61DC82089000D4E8A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					711B29BF1DC82089000D4E8A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 711B29A61DC82089000D4E8A;
+					};
+					711B29CA1DC82089000D4E8A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 711B29A61DC82089000D4E8A;
+					};
+				};
+			};
+			buildConfigurationList = 711B29A21DC82089000D4E8A /* Build configuration list for PBXProject "WYZ3DView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 711B299E1DC82089000D4E8A;
+			productRefGroup = 711B29A81DC82089000D4E8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				711B29A61DC82089000D4E8A /* WYZ3DView */,
+				711B29BF1DC82089000D4E8A /* WYZ3DViewTests */,
+				711B29CA1DC82089000D4E8A /* WYZ3DViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		711B29A51DC82089000D4E8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711B29BA1DC82089000D4E8A /* LaunchScreen.storyboard in Resources */,
+				711B29B71DC82089000D4E8A /* Assets.xcassets in Resources */,
+				711B29B51DC82089000D4E8A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711B29BE1DC82089000D4E8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711B29C91DC82089000D4E8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		711B29A31DC82089000D4E8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711B29E91DC820F1000D4E8A /* WYZOuter3DView.m in Sources */,
+				711B29B21DC82089000D4E8A /* ViewController.m in Sources */,
+				711B29E81DC820F1000D4E8A /* WYZInsert3DView.m in Sources */,
+				711B29AF1DC82089000D4E8A /* AppDelegate.m in Sources */,
+				711B29E71DC820F1000D4E8A /* WYZContainer3DView.m in Sources */,
+				711B29E61DC820F1000D4E8A /* WYZ3DView.m in Sources */,
+				711B29AC1DC82089000D4E8A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711B29BC1DC82089000D4E8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711B29C51DC82089000D4E8A /* WYZ3DViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		711B29C71DC82089000D4E8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711B29D01DC82089000D4E8A /* WYZ3DViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		711B29C21DC82089000D4E8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 711B29A61DC82089000D4E8A /* WYZ3DView */;
+			targetProxy = 711B29C11DC82089000D4E8A /* PBXContainerItemProxy */;
+		};
+		711B29CD1DC82089000D4E8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 711B29A61DC82089000D4E8A /* WYZ3DView */;
+			targetProxy = 711B29CC1DC82089000D4E8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		711B29B31DC82089000D4E8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				711B29B41DC82089000D4E8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		711B29B81DC82089000D4E8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				711B29B91DC82089000D4E8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		711B29D21DC82089000D4E8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		711B29D31DC82089000D4E8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		711B29D51DC82089000D4E8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WYZ3DView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-DView.WYZ3DView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		711B29D61DC82089000D4E8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WYZ3DView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-DView.WYZ3DView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		711B29D81DC82089000D4E8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WYZ3DViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-DView.WYZ3DViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYZ3DView.app/WYZ3DView";
+			};
+			name = Debug;
+		};
+		711B29D91DC82089000D4E8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WYZ3DViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-DView.WYZ3DViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WYZ3DView.app/WYZ3DView";
+			};
+			name = Release;
+		};
+		711B29DB1DC82089000D4E8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WYZ3DViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-DView.WYZ3DViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WYZ3DView;
+			};
+			name = Debug;
+		};
+		711B29DC1DC82089000D4E8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WYZ3DViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-DView.WYZ3DViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WYZ3DView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		711B29A21DC82089000D4E8A /* Build configuration list for PBXProject "WYZ3DView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711B29D21DC82089000D4E8A /* Debug */,
+				711B29D31DC82089000D4E8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		711B29D41DC82089000D4E8A /* Build configuration list for PBXNativeTarget "WYZ3DView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711B29D51DC82089000D4E8A /* Debug */,
+				711B29D61DC82089000D4E8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		711B29D71DC82089000D4E8A /* Build configuration list for PBXNativeTarget "WYZ3DViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711B29D81DC82089000D4E8A /* Debug */,
+				711B29D91DC82089000D4E8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		711B29DA1DC82089000D4E8A /* Build configuration list for PBXNativeTarget "WYZ3DViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711B29DB1DC82089000D4E8A /* Debug */,
+				711B29DC1DC82089000D4E8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 711B299F1DC82089000D4E8A /* Project object */;
+}
