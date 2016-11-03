@@ -17,9 +17,11 @@
 @property (nonatomic,assign) NSInteger storeyCount;
 @property (nonatomic,assign) NSInteger partCountx;
 @property (nonatomic,assign) NSInteger partCounty;
-@property (nonatomic,weak) NSArray<NSArray<NSArray<NSNumber*>*>*>* dataArr;
-@property (nonatomic,weak) NSArray<NSNumber*>* storeyIsHiddenArr;
+@property (nonatomic,strong) NSArray<NSArray<NSArray<NSNumber*>*>*>* dataArr;
+@property (nonatomic,strong) NSArray<NSNumber*>* storeyIsHiddenArr;
 @property (nonatomic,assign) float maxColorNumber;
 @property (nonatomic,assign) float minColorNumber;
-@property (nonatomic,weak) UIColor* sameBackgroudColor;
+@property (nonatomic,strong) UIColor* sameBackgroudColor;
+@property (nonatomic,assign) CGFloat blockBorder;
+@property (nonatomic,assign) CGFloat blockFont;
 @end

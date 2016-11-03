@@ -34,6 +34,8 @@
         _partCounty = 4;
         _maxColorNumber = 40;
         _minColorNumber = 0;
+        _blockBorder = 60;
+        _blockFont = 10;
     }
     return self;
 }
@@ -42,7 +44,7 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     if (containView == nil) {
-        CGFloat conWidth = sqrt(_partCountx*_partCountx+_storeyCount*_storeyCount+_partCounty*_partCounty)*60;
+        CGFloat conWidth = sqrt(_partCountx*_partCountx+_storeyCount*_storeyCount+_partCounty*_partCounty)*_blockBorder;
         CGFloat conHeigth = conWidth;
         CGFloat minScale = self.frame.size.width/conWidth;
         if (conWidth < self.frame.size.width&&conHeigth < self.frame.size.height) {
@@ -75,6 +77,8 @@
         containView.maxColorNumber = _maxColorNumber;
         containView.minColorNumber = _minColorNumber;
         containView.sameBackgroudColor = _sameBackgroudColor;
+        containView.blockBorder = _blockBorder;
+        containView.blockFont = _blockFont;
         [self addSubview:containView];
         self.zoomScale = self.minimumZoomScale;
     }

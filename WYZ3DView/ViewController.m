@@ -23,9 +23,10 @@
     isHide = @NO;
     containerView = [[WYZ3DView alloc]initWithFrame:CGRectMake(100, 250, 200, 200)];
     containerView.partCountx = 4;
-    containerView.partCounty = 4;
+    containerView.partCounty = 1;
     containerView.storeyCount = 5;
-    
+    containerView.blockBorder = 50;
+    containerView.blockFont = 10;
     containerView.dataArr = @[@[@[@44,@(-128),@MAXFLOAT,@12.3],@[@14.3,@15.3,@19.3,@21.3],@[@23.3,@27.3,@31.3,@32.3],@[@35.3,@37.3,@2.3,@5.3,@14.3]],@[@[@12.3,@14.3,@12.3,@14.3],@[@12.3,@14.3,@12.3,@14.3],@[@12.3,@14.3,@12.3],@[@14.3,@12.3,@14.3,@12.3,@14.3]],@[@[@12.3,@14.3,@12.3,@14.3,@12.3],@[@14.3,@12.3,@134,@14.3],@[@12.3,@14.3,@12.3,@14.3],@[@12.3,@14.3,@12.3,@14.3]],@[@[@12.3,@14.3,@12.3,@14.3,@12.3],@[@14.3,@12.3,@14.3,@12.3,@14.3],@[@12.3,@14.3,@12.3,@14.3]]];
     
     [self.view addSubview:containerView];

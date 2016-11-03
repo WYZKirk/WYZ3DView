@@ -34,29 +34,22 @@
     CGFloat _angel1;
     CGFloat _angel2;
     
-    CGFloat blockBorder;
+    CGFloat _block3DBorder;
+    CGFloat _block3DFont;
     
     CGPoint _sCenter;
 }
 
+
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        blockBorder = 60;
         self.backgroundColor = [UIColor clearColor];
         trans = CATransform3DIdentity;
         trans.m34 = -1/500;
-        _storey3DCount = 4;
-        _part3DCountx = 4;
-        _part3DCounty = 4;
-        _edgeheight = (_storey3DCount+1)*blockBorder;
-        _edgeweight = _part3DCountx*blockBorder;
-        _edgedeep = _partCounty*blockBorder;
         _angel = -M_PI/4;
         _angel1 = _angel;
         _angel2 = _angel;
-        _minNumber = 0;
-        _maxNumber = 40;
         _insert3DViewsArr = [[NSMutableArray alloc]init];
         _allShowViews = [[NSMutableArray alloc]init];
         _sCenter = CGPointMake(frame.size.width/2, frame.size.height/2);
@@ -128,7 +121,7 @@
                 UIView *locationView = [[UIView alloc]initWithFrame:CGRectMake((insertView.bounds.size.width-2)/_part3DCountx*parColumn+2, (insertView.bounds.size.height-2)/_part3DCounty*parRow+2, (insertView.bounds.size.width-(_part3DCountx+1)*2)/_part3DCountx, (insertView.bounds.size.height-(_part3DCounty+1)*2)/_part3DCounty)];
                 locationView.backgroundColor = [UIColor grayColor];
                 [insertView addSubview:locationView];
-                UIView *showView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, locationView.frame.size.width, 30)];
+                UIView *showView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, locationView.frame.size.width, _block3DBorder/2)];
                 CGPoint locationP = [insertView convertPoint:locationView.center toView:self];
                 showView.center = CGPointMake(locationP.x, locationP.y-6);
                 [self addSubview:showView];
@@ -138,9 +131,9 @@
                 showLbl.textColor = [UIColor blackColor];
                 showLbl.textAlignment = NSTextAlignmentCenter;
                 
-                showLbl.font = [UIFont systemFontOfSize:9];
+                showLbl.font = [UIFont systemFontOfSize:_block3DFont];
                 [showView addSubview:showLbl];
-                CATransform3D showTrans = CATransform3DMakeTranslation(0, 0,insertView.bounds.size.height/_part3DCounty*(parRow+1)-15-insertView.bounds.size.height/2);
+                CATransform3D showTrans = CATransform3DMakeTranslation(0, 0,insertView.bounds.size.height/_part3DCounty*(parRow+1)-_block3DBorder/4-insertView.bounds.size.height/2);
                 showTrans = CATransform3DRotate(showTrans, M_PI_4, 1, 0, 0);
                 showView.layer.transform = showTrans;
                 if (_tempArr != nil) {
@@ -152,7 +145,7 @@
                                     float eachValue = _tempArr[i][parRow][parColumn].floatValue;
                                     if (_sameColor == nil) {
                                         CGFloat redf = eachValue>2*totalNumber?(eachValue<3*totalNumber?(eachValue-2*totalNumber)/totalNumber:1):0;
-                                        CGFloat greenf = eachValue>totalNumber?(eachValue>3*totalNumber?(4*totalNumber-eachValue)/totalNumber:1):eachValue/totalNumber;
+                                        CGFloat greenf = eachValue>totalNumber?(eachValue>3*totalNumber?(eachValue >4*totalNumber ?0:(4*totalNumber-eachValue)/totalNumber):1):(eachValue<0 ?0:eachValue/totalNumber);
                                         CGFloat bluef = eachValue>totalNumber?(eachValue>2*totalNumber?0:(2*totalNumber-eachValue)/totalNumber):1;
                                         locationView.backgroundColor = [[UIColor alloc]initWithRed:redf green:greenf blue:bluef alpha:1];
                                     }else{
@@ -187,8 +180,8 @@
 -(void)handlePan:(UIPanGestureRecognizer*) sender{
     if (sender.maximumNumberOfTouches == 2 && sender.minimumNumberOfTouches == 2) {
         CGPoint p=[sender translationInView:self];
-        CGFloat angel1 = _angel1+p.x/30;
-        CGFloat angel2 = _angel2-p.y/30;
+        CGFloat angel1 = _angel1+p.x*2/_block3DBorder;
+        CGFloat angel2 = _angel2-p.y*2/_block3DBorder;
         
         if (sender.state == UIGestureRecognizerStateEnded) {
             _angel1 = angel1;
@@ -208,15 +201,15 @@
 //赋值
 -(void)setStoreyCount:(NSInteger)storeyCount{
     _storey3DCount = storeyCount;
-    _edgeheight = (storeyCount+1)*blockBorder;
+    _edgeheight = (storeyCount+1)*_block3DBorder;
 }
 -(void)setPartCountx:(NSInteger)partCountx{
     _part3DCountx = partCountx;
-    _edgeweight = partCountx*blockBorder;
+    _edgeweight = partCountx*_block3DBorder;
 }
 -(void)setPartCounty:(NSInteger)partCounty{
     _part3DCounty = partCounty;
-    _edgedeep = partCounty*blockBorder;
+    _edgedeep = partCounty*_block3DBorder;
 }
 -(void)setDataArr:(NSArray<NSArray<NSArray<NSNumber *>*> *> *)dataArr{
     _tempArr = dataArr;
@@ -247,7 +240,14 @@
 -(void)setSameBackgroudColor:(UIColor *)sameBackgroudColor{
     _sameColor = sameBackgroudColor;
 }
-
-
+-(void)setBlockBorder:(CGFloat)blockBorder{
+    _block3DBorder = blockBorder;
+    _edgeheight = (_storey3DCount+1)*blockBorder;
+    _edgeweight = _part3DCountx*blockBorder;
+    _edgedeep = _part3DCounty*blockBorder;
+}
+-(void)setBlockFont:(CGFloat)blockFont{
+    _block3DFont = blockFont;
+}
 
 @end
