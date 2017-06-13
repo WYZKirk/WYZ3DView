@@ -46,7 +46,7 @@
     if (containView == nil) {
         CGFloat conWidth = sqrt(_partCountx*_partCountx+_storeyCount*_storeyCount+_partCounty*_partCounty)*_blockBorder;
         CGFloat conHeigth = conWidth;
-        CGFloat minScale = self.frame.size.width/conWidth;
+        CGFloat minScale;
         if (conWidth < self.frame.size.width&&conHeigth < self.frame.size.height) {
             conWidth = self.frame.size.width;
             conHeigth = self.frame.size.height;

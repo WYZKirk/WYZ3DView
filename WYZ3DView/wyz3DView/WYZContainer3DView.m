@@ -23,7 +23,7 @@
     NSInteger _storey3DCount;
     NSInteger _part3DCountx;
     NSInteger _part3DCounty;
-    NSArray<NSArray<NSArray<NSNumber*>*>*>* _tempArr;
+    NSArray<NSArray<NSArray<id>*>*>* _tempArr;
     NSMutableArray<WYZInsert3DView*>* _insert3DViewsArr;
     NSMutableArray<NSArray<UIView*>*>* _allShowViews;
     
@@ -65,7 +65,7 @@
 }
 
 -(void)drawRect:(CGRect)rect{
-    
+    [super drawRect:rect];
     [self setOuterView];
     [self setInsertView];
     
@@ -112,7 +112,7 @@
         [self addSubview:insertView];
         [_insert3DViewsArr addObject:insertView];
         
-        CATransform3D trans2 = CATransform3DTranslate(trans, 0, _edgeheight/2-_edgeheight*(_storey3DCount-i)/(_storey3DCount+1), 0);
+        CATransform3D trans2 = CATransform3DTranslate(trans, 0, _edgeheight/2-_edgeheight*(i+1)/(_storey3DCount+1), 0);
         trans2 = CATransform3DRotate(trans2, M_PI_2, 1, 0, 0);
         insertView.layer.transform = trans2;
         NSMutableArray<UIView*> *storeyShowViews = [[NSMutableArray alloc]init];
@@ -140,9 +140,9 @@
                     if (_tempArr.count>i) {
                         if (_tempArr[i].count>parRow) {
                             if (_tempArr[i][parRow].count>parColumn) {
-                                if (_tempArr[i][parRow][parColumn].floatValue  != MAXFLOAT) {
+                                if (_tempArr[i][parRow][parColumn]  != nil && ![_tempArr[i][parRow][parColumn] isKindOfClass:[NSNull class]]) {
                                     float totalNumber = (_maxNumber-_minNumber)/4;
-                                    float eachValue = _tempArr[i][parRow][parColumn].floatValue;
+                                    float eachValue = ((NSNumber*)_tempArr[i][parRow][parColumn]).floatValue;
                                     if (_sameColor == nil) {
                                         CGFloat redf = eachValue>2*totalNumber?(eachValue<3*totalNumber?(eachValue-2*totalNumber)/totalNumber:1):0;
                                         CGFloat greenf = eachValue>totalNumber?(eachValue>3*totalNumber?(eachValue >4*totalNumber ?0:(4*totalNumber-eachValue)/totalNumber):1):(eachValue<0 ?0:eachValue/totalNumber);
@@ -211,7 +211,7 @@
     _part3DCounty = partCounty;
     _edgedeep = partCounty*_block3DBorder;
 }
--(void)setDataArr:(NSArray<NSArray<NSArray<NSNumber *>*> *> *)dataArr{
+-(void)setDataArr:(NSArray<NSArray<NSArray<id>*> *> *)dataArr{
     _tempArr = dataArr;
 }
 -(void)setStoreyIsHiddenArr:(NSArray<NSNumber *> *)storeyIsHiddenArr{
